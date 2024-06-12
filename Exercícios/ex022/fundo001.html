@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+
+        body{   /* Imagem de fundo */
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+
+        div.quadrado {
+            display: inline-block; /* Para ficar uma do lado da outra */
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+        }
+
+        div#q1{        /* Aplicando cores normais ao fundo */
+
+            background-color: skyblue;
+        }
+
+        div#q2 {       /* Aplicando no fundo cores degradê */  
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {       /* Para colocar imagens no funo usar o 'url' */
+            background-image: url('imagens/pattern003.png');
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
