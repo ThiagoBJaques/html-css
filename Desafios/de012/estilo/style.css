@@ -1,1 +1,65 @@
 @charset "UTF-8";
+
+* {     /* Configurações Gerais */
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {      /* Configurações em comum html e body */
+    min-height: 100vh;  /* Tamanho minímo da > altura < da viewport */
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;     /* Ao passar o mouse por cima fica sublinhado o link */
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;       /* Espaçamento duplo entre as linhas */
+    padding-left: 30px;     /* Espaço para dentro */
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.416);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 6px;
+}
