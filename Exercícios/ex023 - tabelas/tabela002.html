@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* Para deixar o cabeçalho fixo precisa desse comando também */
 
         }
 
@@ -20,9 +21,31 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.455);
+        }
+
+        thead > tr > th {
+            position: sticky;   /* Para deixar o cabeçalho da tabela fixo */
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {  /* odd = Ímpar  even = Par pode ser usado assim também */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
@@ -32,6 +55,7 @@
         Anatomia para Tabelas Grandes
 
         TABLE = Tabela
+            CAPTION = Legenda
             THEAD = Cabeça/Cabeçalho
                 TR, TD, TH
             TBODY = Corpo
@@ -40,128 +64,132 @@
                 TR, TD, TH
 
                 (th) = table título
+                Estado
+                População 
+                Total de Habitantes
     -->
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>     <!-- Escopo da Coluna -->
+                <th scope="col" style="width: 120px;">População</th>  <!-- Escopo da Coluna / style configuração pontual --> 
             </tr>
         </thead>
         <tbody>
+            <caption>População das Unidades Federativas</caption>
             <tr>
                 <td>São Paulo</td>
-                <td>44 411 238</td>
+                <td class="num">44 411 238</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>20 538 718</td>
+                <td class="num">20 538 718</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>16 054 524</td>
+                <td class="num">16 054 524</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14 141 626</td>
+                <td class="num">14 141 626</td>
             </tr>
             <tr>
                 <td>Paraná</td>
-                <td>11 444 380</td>
+                <td class="num">11 444 380</td>
             </tr>
             <tr>
                 <td>Rio Grande do Sul</td>
-                <td>10 882 965</td>
+                <td class="num">10 882 965</td>
             </tr>
             <tr>
                 <td>Pernambuco</td>
-                <td>9 058 931</td>
+                <td class="num">9 058 931</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>8 794 957</td>
+                <td class="num">8 794 957</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td>8 121 025</td>
+                <td class="num">8 121 025</td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>7 610 361</td>
+                <td class="num">7 610 361</td>
             </tr>
             <tr>
                 <td>Goiás</td>
-                <td>7 056 495</td>
+                <td class="num">7 056 495</td>
             </tr>
             <tr>
                 <td>Maranhão</td>
-                <td>6 775 805</td>
+                <td class="num">6 775 805</td>
             </tr>
             <tr>
                 <td>Paraíba</td>
-                <td>3 974 687</td>
+                <td class="num">3 974 687</td>
             </tr>
             <tr>
                 <td>Amazonas</td>
-                <td>3 941 613</td>
+                <td class="num">3 941 613</td>
             </tr>
             <tr>
                 <td>Espírito Santo</td>
-                <td>3 833 712</td>
+                <td class="num">3 833 712</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
-                <td>3 658 649</td>
+                <td class="num">3 658 649</td>
             </tr>
             <tr>
                 <td>Rio Grande do Norte</td>
-                <td>3 302 729	</td>
+                <td class="num">3 302 729	</td>
             </tr>
             <tr>
                 <td>Piauí</td>
-                <td>3 271 199</td>
+                <td class="num">3 271 199</td>
             </tr>
             <tr>
                 <td>Alagoas</td>
-                <td>3 127 683</td>
+                <td class="num">3 127 683</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
-                <td>2 817 381</td>
+                <td class="num">2 817 381</td>
             </tr>
             <tr>
                 <td>Mato Grosso do Sul</td>
-                <td>2 757 013</td>
+                <td class="num">2 757 013</td>
             </tr>
             <tr>
                 <td>Sergipe</td>
-                <td>2 209 558</td>
+                <td class="num">2 209 558</td>
             </tr>
             <tr>
                 <td>Rondônia</td>
-                <td>1 581 196</td>
+                <td class="num">1 581 196</td>
             </tr>
             <tr>
                 <td>Tocantins</td>
-                <td>1 511 460</td>
+                <td class="num">1 511 460</td>
             </tr>
             <tr>
                 <td>Acre</td>
-                <td>830 018</td>
+                <td class="num">830 018</td>
             </tr>
             <tr>
                 <td>Amapá</td>
-                <td>733 759</td>
+                <td class="num">733 759</td>
             </tr>
             <tr>
                 <td>Roraima</td>
-                <td>636 707</td>
+                <td class="num">636 707</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>    <!-- Escopo da Linha -->
+                <td class="num"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
     </table>
