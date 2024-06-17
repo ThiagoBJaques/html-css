@@ -11,21 +11,23 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /* Espaço entre as colunas e linhas juntas */
-            border: 5px solid blue;
         }
 
-        tr.linha { /* Linha se refere a class referenciada em HTML */
+        /*tr.linha {  Linha se refere a class referenciada em HTML 
             background-color: lightgray;
         }
-
+        */
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: top; /* Alinhamento Vertical */
         }
 
-        td.dado {
-            background-color: yellow;
+        .numero {   /* Exemplo para deixar o número na direita */
+            text-align: right;
         }
     </style>
 </head>
@@ -44,14 +46,14 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha"> <!-- (tr) Linha Interira / segunda linha -->
+        <tr> <!-- (tr) Linha Interira / segunda linha -->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
         <tr>    <!-- Terceira Linha -->
             <td>A3</td>
-            <td class="dado">B3</td>
+            <td>B3</td>
             <td>C3</td>
         </tr>
         <tr>  <!-- Quarta Linha -->
