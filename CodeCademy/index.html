@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido</title>
+    <link rel="stylesheet" href="estilo.style.css">
 </head>
 <body>
-    <section>
-        <img src="#" alt="#" id="#">
+    <section id="sobreposiçao">
+        <img src="imagens/hambu.jpg" alt="Foto de um Hambúguer" id="hamburguer">
+
         <hr>
         <form action="teste.html" method="post">
             <h1>Monte seu Hambúrguer!</h1>
@@ -16,14 +18,14 @@
                     <br>
                     <input list="proteinas" name="proteina" id="proteina">
                     <datalist id="proteinas">
-                        <option value="gado"></option>
-                        <option value="frango"></option>
-                        <option value="peixe"></option>
+                        <option value="Gado"></option>
+                        <option value="Frango"></option>
+                        <option value="Peixe"></option>
                     </datalist>
                 </section>
         <hr>
             <section id="quantidade"></section>
-                <label for="quanti">Quantos Hambúrgures você quer?</label>
+                <label for="quanti">Quantos Bifes você quer?</label>
                 <br>
                 <input type="number" name="quanti" id="quanti" min="1" max="5">
         </form>
@@ -90,7 +92,7 @@
             </section> 
             <hr>
             <section class="extra">
-                <label for="extra">Informações Extra:</label>
+                <label for="extra">Informação Extra:</label>
                 <br>
                 <textarea class="extra" name="extra" id="extra" rows="3" cols="40" placeholder="Informações adicionais"></textarea>
             </section>          
