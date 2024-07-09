@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<body>
+    <section>
+        <img src="#" alt="#" id="#">
+        <hr>
+        <form action="teste.html" method="post">
+            <h1>Monte seu Hambúrguer!</h1>
+                <section class="proteina">
+                    <label for="proteina">Que tipo de carne você gosta?</label>
+                    <br>
+                    <input list="proteinas" name="proteina" id="proteina">
+                    <datalist id="proteinas">
+                        <option value="gado"></option>
+                        <option value="frango"></option>
+                        <option value="peixe"></option>
+                    </datalist>
+                </section>
+        <hr>
+            <section id="quantidade"></section>
+                <label for="quanti">Quantos Hambúrgures você quer?</label>
+                <br>
+                <input type="number" name="quanti" id="quanti" min="1" max="5">
+        </form>
+        <hr>
+            <section id="cozimento">
+                <label for="ponto">Como vocêquer que seu hambúrguer seja cozido?</label>
+                <br>
+                <span>Mal passado</span>
+                <input type="range" name="ponto" id="ponto" min="1" max="5" step="0.5" value="3">
+                <span>Bem passado</span>
+            </section>
+            <hr> 
+            <section id="salada">
+                <label for="salada"></label>
+                <span>Escolha sua salada:</span>
+                <br>
+                <input type="checkbox" name="salada" id="alface" value="alface">
+                <label for="alface">Alface</label>
+                <br>
+                <input type="checkbox" name="salada" id="picles" value="picles">
+                <label for="picles">Picles</label>
+                <br>
+                <input type="checkbox" name="salada" id="tomate" value="tomate">
+                <label for="tomate">Tomate</label>
+                <br>
+                <input type="checkbox" name="salada" id="cebola" value="cebola">
+                <label for="cebola">Anéis de Cebola</label>
+            </section>
+            <hr>
+            <section id="queijo">
+                <span>Você gostaria de adicionar queijo?</span>
+                <br>
+                <input type="radio" name="queijo" id="sim" value="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="queijo" id="nao" value="nao">
+                <label for="nao">Não</label>
+                <br>
+                <span>Escolha o queijo:</span>
+                <br>
+                <input type="radio" name="sabor" id="cheddar" value="cheddar">
+                <label for="cheddar">Cheddar</label>
+                <input type="radio" name="sabor" id="mussarela" value="mussarela">
+                <label for="mussarela">Mussarela</label>
+            </section>
+            <hr>
+            <section id="tipo-pao">
+                <label for="pao">Que tipo de pão você gostaria?</label>
+                <select class="pao" id="pao">
+                    <option value="americano">Americano</option>
+                    <option value="australiano">Australiano</option>
+                    <option value="brioche">Brioche</option>
+                </select>
+            </section>
+            <hr> 
+            <section id="selecione-molho">
+                <label for="molho">Qual molho você gostaria?</label>
+                <br>
+                <input list="molhos" name="molho" id="molho">
+                <datalist id="molhos">
+                    <option value="ketchup"></option>
+                    <option value="maionese"></option>
+                    <option value="mostarda"></option>
+                </datalist>
+            </section> 
+            <hr>
+            <section class="extra">
+                <label for="extra">Informações Extra:</label>
+                <br>
+                <textarea class="extra" name="extra" id="extra" rows="3" cols="40" placeholder="Informações adicionais"></textarea>
+            </section>          
+    </section>
+</body>
+</html>
