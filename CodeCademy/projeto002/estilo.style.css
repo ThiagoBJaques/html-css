@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    background: #59cd90;
+    color: #3fa7d6;
+    font-family: "Fjalla one", sans-serif;
+    font-weight: bolder;
+}
+
+section.posiçao {
+    background-color: white;
+    width: 400px;
+    text-align: center;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+form {
+    line-height: 30px;
+}
